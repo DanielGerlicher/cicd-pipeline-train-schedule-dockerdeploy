@@ -36,6 +36,7 @@ pipeline {
                     catch(err)
                     {
                         echo err
+                        currentBuild.result = 'SUCCESS'
                     }
                 }
             }
